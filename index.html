@@ -6,21 +6,21 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body class="page">
-  <div class="recomm">
+  <header class="recomm">
     <img src="./eisenhower-matrix.jpg">
     <a class="more" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="main-wrapper">
-    <p id="add-sect">
-      <label class="sect-heading block-mb20" for="new-task">Add Item</label>
+  </header>
+  <main class="main-wrapper">
+    <h3 class="sect-heading block-mb20">Add Item</h3>
+    <section class="sect" id="add-sect">
       <div class="task-row-wrapper">
         <input id="new-task" class="task-name task-name-editable" type="text">
         <button class="btn">Add</button>
       </div>
-    </p>
+    </section>
     <h3 class="sect-heading">Todo</h3>
-    <ul class="sect" id="incompl-sect">
-      <li class="todo-row">
+    <section class="sect" id="incompl-sect">
+      <div class="todo-row">
         <input class="done-mark" type="checkbox">
         <label class="task-name task-name-static">Pay Bills</label>
         <input type="text" class="task-name task-name-editable">
@@ -28,8 +28,8 @@
         <button class="btn del">
           <img class="del-ico" src="./remove.svg">
         </button>
-      </li>
-      <li class="todo-row edit-mode">
+      </div>
+      <div class="todo-row edit-mode">
         <input class="done-mark" type="checkbox">
         <label class="task-name task-name-static">Go Shopping</label>
         <input type="text" value="Go Shopping" class="task-name task-name-editable">
@@ -37,11 +37,11 @@
         <button class="btn del">
           <img class="del-ico" src="./remove.svg">
         </button>
-      </li>
-    </ul>
+      </div>
+    </section>
     <h3 class="sect-heading">Completed</h3>
-    <ul class="sect" id="compl-sect">
-      <li class="todo-row">
+    <section class="sect" id="compl-sect">
+      <div class="todo-row">
         <input class="done-mark" type="checkbox" checked>
         <label class="task-name task-name-static">See the Doctor</label>
         <input type="text" class="task-name task-name-editable">
@@ -49,9 +49,9 @@
         <button class="btn del">
           <img class="del-ico" src="./remove.svg">
         </button>
-      </li>
-    </ul>
-  </div>
+      </div>
+    </section>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
