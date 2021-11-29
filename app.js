@@ -39,6 +39,7 @@ var createNewTaskElement=function(taskString){
     //Each elements, needs appending
     listItem.classList.add("todo-row");
     deleteButtonImg.classList.add("del-ico");
+    deleteButtonImg.alt="";
     checkBox.type="checkbox";
     editInput.type="text";
     editInput.classList.add("task-name");
