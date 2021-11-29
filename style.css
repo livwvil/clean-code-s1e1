@@ -16,7 +16,7 @@
     width: 100%;
 }
 
-.recomm .more {
+.recomm .recomm__more {
     font-family: fantasy, cursive;
 }
 
@@ -34,7 +34,7 @@
     margin: 0 auto 0;
 }
 
-.task-name {
+.sect__task-name {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
@@ -59,7 +59,7 @@ button {
     outline: none;
 }
 
-.btn {
+.sect__btn {
     background: none;
     border: 0px;
     color: #888;
@@ -69,11 +69,11 @@ button {
     cursor: pointer;
 }
 
-.btn:hover {
+.sect__btn:hover {
     color: #3a3A3a;
 }
 
-.sect-heading {
+.sect__heading {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -83,7 +83,7 @@ button {
     text-transform: uppercase;
 }
 
-.task-name-editable {
+.sect__task-name_editable {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -96,7 +96,7 @@ button {
     color: #888;
 }
 
-.task-name-editable:focus {
+.sect__task-name_editable:focus {
     color: #333;
 }
 
@@ -111,7 +111,7 @@ button {
 }
 
 /* Task list */
-.todo-row {
+.sect__todo-row {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -121,51 +121,51 @@ button {
     align-items: center;
 }
 
-.todo-row > * {
+.sect__todo-row > * {
     vertical-align: middle;
 }
 
-.todo-row > .done-mark {
+.sect__todo-row > .sect__done-mark {
     margin: 0 10px;
 }
 
-.todo-row > .task-name-static {
+.sect__todo-row > .sect__task-name_static {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-.todo-row > .task-name-editable {
+.sect__todo-row > .sect__task-name_editable {
     width: 226px;
 }
 
-.btn.del .del-ico {
+.sect__btn.sect__btn_del .sect__del-ico {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.btn.del .del-ico:hover {
+.sect__btn.sect__btn_del .sect__del-ico:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-#compl-sect .task-name-static {
+#compl-sect .sect__task-name_static {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-.sect .todo-row .task-name-editable {
+.sect .sect__todo-row .sect__task-name_editable {
     display: none;
 }
 
-.sect .todo-row.edit-mode .task-name-editable {
+.sect .sect__todo-row.sect__todo-row_edit-mode .sect__task-name_editable {
     display: inline-block;
     width: 224px;
 }
 
-.sect .todo-row.edit-mode .task-name-static {
+.sect .sect__todo-row.sect__todo-row_edit-mode .sect__task-name_static {
     display: none;
 }
